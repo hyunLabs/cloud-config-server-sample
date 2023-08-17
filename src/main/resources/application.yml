@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: master
+          uri: https://github.com/hyunLabs/spring-cloud-config-sample
+          search-paths: test-cloud-config-file/**
+          basedir: ./repo
